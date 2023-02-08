@@ -6,72 +6,163 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-.background {
-    background: url(../img/design1_image1.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    z-index: -1;
-}
-header, .navbar {   
-
+header, main {
     width: 80vw;
     margin: 0 auto;
 }
-h1, h2 {
+header {
+    background: url(../img/design1_image1.jpg) center -120px;
+    background-size: cover;
+    height: 190px;
+   
+}
+header figure {
+    border: 1px solid #ccc;
+    background: #222;
+    padding: 10px;
+    margin-left: 30px;
+}
+header figure img {
+    height: 100px;
+}
+header .subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 5px #000;
-}
-h1 {
-    margin-top: 30px;
-}
-h2 {
-    margin-bottom: 20vh;
-}
-.navbar {
-    background: #fff;
-    padding: 10px;
-    width: 80vw;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar figure, .navbar figure img {
-    width: 100px;
-    height: auto;
+    text-shadow: 1px 1px #222;
+    padding-top: 15vh;
+    margin-bottom: 30px;
 }
 nav {
-    padding-right: 20px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
 }
-.navbar nav a{
-    color: rgb(255, 117, 5);
+nav a {
     text-decoration: none;
+    border: 1px solid #8b8b8b;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color:#222;
+    font-weight: 600;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+nav a:hover {    
+    box-shadow: 1px 1px 5px 0px rgb(121 121 121)
+}
+.active {
+    background: #222;
+    color: #fff;
 }
 main {
-    min-height: 70vh;
-    margin: 0 auto;
+    padding-top: 90px;
 }
-.events {
+main h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.fechas {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
 }
 article {
     width: 200px;
-    height: 200px;
-    box-shadow: 2px 3px 3px 0px #00000021;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 200px;
+    border: 1px solid #d4d4d4;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px #d4d4d4;
     padding: 20px;
-    flex-direction: column;
     text-align: center;
-    border: 1px solid #d4d4d4d4;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+article:hover {
+    border-bottom: 6px solid rgba(16, 52, 252, 0.932);
+}
+.about > article, .rules > article, .game > article, .contact{
+    width: auto;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+    min-height: auto;
+}
+.about > article, .rules > article, .contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about > article > figure > img, .rules > article > figure > img{
+    width: 200px;
+}
+.about article div {
+    padding-left: 30px;
+}
+.about article:nth-child(2){
+    flex-direction: row-reverse;
+}
+.about article h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.rules article {
+    flex-direction: column;
+}
+.rules > article > ol > li {
+    margin-bottom: 10px;
+  }
+.rules > article > ol > li > h4 {
+  margin-bottom: 10px;
+}
+.game article {
+    padding: 0;
+    margin: 20px 0;
+}
+address {
+    margin: 10px 0 30px;
+}
+.game {
+    margin-top: 30px;
+}
+.game table {
+    width: 80vw;
+    text-align: center;
+}
+.game > table > thead {
+    background: #222;
+    color: #fff;
+}
+.game > table > thead > tr > th {
+    padding: 20px 0;
+}
+.game > table > tbody > tr > td {
+    padding: 5px 0;
+}
+.game > table > tbody > tr:nth-child(2n) {
+    background: #5a93ff2e;
+}
+.game > table > tbody > tr > td > span {
+    font-weight: 600;
+    color: #222;
+}
+.contact > figure > img {
+ width: 30vw;
+ margin: 30px 30px 30px 0;
 }
 footer {
     height: 10vh;
-    background: rgb(46, 46, 46);
+    background-color: rgb(34, 34, 34);
 }
