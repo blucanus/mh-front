@@ -225,7 +225,22 @@ address {
     box-shadow: 1px 1px 3px #3333338c;
     border: 1px solid #fff;
   }
-  
+  .maps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.maps div {
+    margin: 20px 0;
+}
+.maps div h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.maps div .iframe {
+    border: 1px solid #222;
+}
 footer {
     height: 10vh;
     background-color: rgb(34, 34, 34);
