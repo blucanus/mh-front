@@ -139,24 +139,24 @@ address {
 .game {
     margin-top: 30px;
 }
-.game table {
+.table-cool {
     width: 80vw;
     text-align: center;
 }
-.game > table > thead {
+.table-cool > thead {
     background: #222;
     color: #fff;
 }
-.game > table > thead > tr > th {
+.table-cool > thead > tr > th {
     padding: 20px 0;
 }
-.game > table > tbody > tr > td {
+.table-cool > tbody > tr > td {
     padding: 5px 0;
 }
-.game > table > tbody > tr:nth-child(2n) {
+.table-cool > tbody > tr:nth-child(2n) {
     background: #5a93ff2e;
 }
-.game > table > tbody > tr > td > span {
+.table-cool > tbody > tr > td > span {
     font-weight: 600;
     color: #222;
 }
@@ -164,6 +164,51 @@ address {
  width: 30vw;
  margin: 30px 30px 30px 0;
 }
+.data > .table-cool {
+    text-transform: capitalize;
+}
+.data {
+    margin: 30px 0;
+}
+.form form {
+    width: 50vw;
+    margin: 20px auto;
+}
+
+.form fieldset {
+    border: none;
+    margin: 20px 0;
+}
+.form fieldset input {
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.form fieldset.street input {
+    width: 79%;
+    display: inline-block;
+  }
+  .form fieldset.street label {
+    display: inline-block;
+    width: 20%;
+  }
+  
+.form fieldset input:focus-visible, .form fieldset input:focus {
+    border: none;
+    border-bottom: 1px solid blue;
+}
+.city, .date {
+    display: flex;
+    justify-content: space-between;
+}
+.city div, .date div {
+   width: 100%;
+}
+.city div input, .city div label {
+    width: 70%;
+}
+
+  
 footer {
     height: 10vh;
     background-color: rgb(34, 34, 34);
